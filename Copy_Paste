@@ -1,8 +1,13 @@
+#1st way:
 while True:
     try:
         print(input())
     except EOFError:
         break
+#2nd way:
+import sys
+p = sys.stdin.read()
+sys.stdout.write(p)
 
 input
 #Hello
