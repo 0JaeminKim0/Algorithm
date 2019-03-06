@@ -1,0 +1,17 @@
+a = int(input())
+b = int(input())
+c = int(input())
+mul = str(a*b*c)
+for i in range(0, 10):
+    print(mul.count(str(i)))
+
+#input:2 3 5 
+mul = 30
+#output:
+0:1
+1:0
+2:0
+3:1
+-
+-
+9:0
