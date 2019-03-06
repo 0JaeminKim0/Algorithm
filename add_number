@@ -1,0 +1,12 @@
+x = int(input())
+y = input()
+a = list()
+b = 0
+for i in range(x):
+    a = map(int,str(y))
+b = sum(a)
+print(b)
+
+#input1:3
+#input2:567
+#output:18
