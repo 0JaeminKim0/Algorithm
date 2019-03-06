@@ -1,0 +1,6 @@
+x, y = map(int, input().split())
+result = x - y
+print(result)
+
+# input : 3 5
+# output : -2
