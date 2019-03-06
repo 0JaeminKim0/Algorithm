@@ -1,0 +1,6 @@
+x, y=map(int, input().split())
+div = x/y
+print(div)
+
+#input 6 3
+#output 2
