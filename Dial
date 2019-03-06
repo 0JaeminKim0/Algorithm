@@ -1,0 +1,34 @@
+x = list(input())
+print(x)
+list2 = ['A', 'B', 'C']
+list3 = ['D', 'E', 'F']
+list4 = ['G', 'H', 'I']
+list5 = ['J', 'K', 'L']
+list6 = ['M', 'N', 'O']
+list7 = ['P', 'Q', 'R', 'S']
+list8 = ['T', 'U', 'V']
+list9 = ['W', 'X', 'Y', 'Z']
+list_result = list()
+for i in x:
+    if i in list2:
+        list_result.append(3)
+    if i in list3:
+        list_result.append(4)
+    if i in list4:
+        list_result.append(5)
+    if i in list5:
+        list_result.append(6)
+    if i in list6:
+        list_result.append(7)
+    if i in list7:
+        list_result.append(8)
+    if i in list8:
+        list_result.append(9)
+    if i in list9:
+        list_result.append(20)
+print(sum(list_result))    
+
+##input : SMELL
+##output : 31
+
+
