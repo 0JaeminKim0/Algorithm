@@ -1,0 +1,4 @@
+print(len(input().split()))
+
+#input : Hello this is Jaemin
+#output : 4
