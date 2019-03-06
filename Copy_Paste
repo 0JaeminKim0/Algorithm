@@ -1,0 +1,14 @@
+while True:
+    try:
+        print(input())
+    except EOFError:
+        break
+
+input
+#Hello
+#Baekjoon
+#Online Judge
+output:
+#Hello
+#Baekjoon
+#Online Judge
