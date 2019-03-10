@@ -1,0 +1,16 @@
+x = int(input())
+sum = 0
+count = 0
+
+while x > sum:
+    sum += count*6
+    count += 1
+    
+    if x <= sum+1:
+        print(count)
+        break
+
+# input : 13
+# output: 3
+
+# arithmetic sequence problem
