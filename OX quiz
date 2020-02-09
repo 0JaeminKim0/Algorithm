@@ -1,0 +1,21 @@
+input_ox = int(input())
+for i in range(input_ox):
+  ox = input()
+  score = 0
+  cnt = 0
+  for j in ox:
+    if j == 'O':
+      cnt += 1
+      score += cnt
+    elif j == 'X':
+      score += 0
+      cnt = 0
+  print(score)
+  
+  
+  
+  %% input        output
+  %% 3          
+  %% OOOOXXXOXO   12
+  %% OOOOXXO      11
+  %% OOO          6
