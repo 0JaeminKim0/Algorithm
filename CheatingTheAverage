@@ -1,0 +1,28 @@
+n = int(input())
+def largest(arr, n):
+  max = arr[0]
+  for i in range(1, n):
+    if arr[i] > max:
+      max = arr[i]
+  return max
+
+a = list(map(float, input().split()))
+len_a = len(a)
+highest = largest(a, len_a)
+
+for i in range(n):
+  avr = 0
+  count = 0
+  for j in range(len_a):
+    avr = (a[j]/highest)*100
+    count += avr
+  ans = count / len_a
+print(ans)
+
+## Input     output
+## 3          75.0
+## 40 60 80
+## 
+
+### New Cheating avg algo
+### Score / m * 100 (m is the highest score)
