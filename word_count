@@ -1,0 +1,29 @@
+word = input().upper()
+word_list = list(set(word))
+word_count = list()
+
+for i in word_list:
+  count = word.count(i)
+  print(count)
+  word_count.append(count)
+
+print(word_list)
+print(word_count)
+
+if word_count.count(max(word_count)) >= 2:
+  print('?')
+else:
+  print(word_list[word_count.index(max(word_count))])
+  
+  ### input : hhhhiiiiihihihiiii
+  ### output: I
+  ### input : missisipi
+  ### ouput : ? 많이 나온 알파벳 갯수가 같을 떄.
+  
+  
+  ### Index 와 set에 대해 배워보자
+  ### list.index 는 지정 index를 리턴해줌
+  ### list.index(3) = list[2] 이런 느낌
+  ### list.count("a")는 리스트안에서 a의 갯수를 세어주는 함수
+  ### set은 중복을 허용하지 않는다 / 순서가 없다
+  ### 집합형으로 만들어주는 함수.
