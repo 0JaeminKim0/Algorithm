@@ -1,0 +1,21 @@
+n = int(input())
+for i in range(n):
+  num, string = input().split()
+  
+  ###Using list
+  word_list = list(string)
+  result = list()
+  for k in word_list:
+    cont = k*int(num)
+    result.append(cont)
+  print(' '.join(result))
+  
+  ###Using string
+  text = ''
+  for j in (string):
+    text += int(num) * j
+  print(text)
+  
+  input 2         output
+        3 ABC           AAABBBCCC
+        5 /HTP          /////HHHHHTTTTTPPPPP
