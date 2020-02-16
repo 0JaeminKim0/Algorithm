@@ -1,0 +1,11 @@
+fixed_cost, variable_cost, sell_cost = list(map(int,input().split()))
+n = 0
+if (sell_cost <= variable_cost):
+  n = -1
+else: 
+  n = fixed_cost // (sell_cost - variable_cost) + 1
+print(n)
+
+
+input               ouput
+1000 70 170         11
